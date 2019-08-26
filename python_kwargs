@@ -1,0 +1,19 @@
+def kfun(**kwargs):
+    for key, value in kwargs.items():
+        print ("%s : %s" %(key, value))
+
+def kfun(**myargs):
+    for key, value in myargs.items():
+        print ("%s : %s \t\t\t\t\t%s" %(key, value, type(value)))
+
+
+def test(x):
+    if isinstance(x, int) : return "Integer"
+    if isinstance(x, str) : return "String"
+    if isinstance(x, float) : return "Float"
+    if isinstance(x, bytes) : return "Byte"
+    if isinstance(x, list) : return "List"
+    if isinstance(x, dict) : return "Dict"
+    if isinstance(x, set) : return "Set"
+    if isinstance(x, object): return "Object"
+
