@@ -1,14 +1,18 @@
+
 def myargs(*argv):  
     for arg in argv:  
         print (arg)
+
 
 def kfun(**kwargs):
     for key, value in kwargs.items():
         print ("%s : %s" %(key, value))
 
+
 def kfun(**myargs):
     for key, value in myargs.items():
         print ("%s : %s \t\t\t\t\t%s" %(key, value, type(value)))
+
 
 def myargs(firstarg, *argv): 
     print ("First arg:", firstarg) 
@@ -27,3 +31,5 @@ def test(x):
     if isinstance(x, tuple)  : return "Tuple"
     if isinstance(x, object) : return "Object"
     return "Unknown"
+
+
