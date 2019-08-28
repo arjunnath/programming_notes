@@ -16,11 +16,14 @@ def myargs(firstarg, *argv):
         print("Next args in *argv :", arg)
 
 def test(x):
-    if isinstance(x, int) : return "Integer"
-    if isinstance(x, str) : return "String"
-    if isinstance(x, float) : return "Float"
-    if isinstance(x, bytes) : return "Byte"
-    if isinstance(x, list) : return "List"
-    if isinstance(x, dict) : return "Dict"
-    if isinstance(x, set) : return "Set"
-    if isinstance(x, object): return "Object"
+    if isinstance(x, bool)   : return "Bool"
+    if isinstance(x, int)    : return "Integer"
+    if isinstance(x, str)    : return "String"
+    if isinstance(x, float)  : return "Float"
+    if isinstance(x, bytes)  : return "Byte"
+    if isinstance(x, list)   : return "List"
+    if isinstance(x, dict)   : return "Dict"
+    if isinstance(x, set)    : return "Set"
+    if isinstance(x, tuple)  : return "Tuple"
+    if isinstance(x, object) : return "Object"
+    return "Unknown"
